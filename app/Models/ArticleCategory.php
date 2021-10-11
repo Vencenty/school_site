@@ -10,4 +10,10 @@ class ArticleCategory extends BaseModel
     use HasFactory;
 
     protected $table = 'article_category';
+
+    public function articles()
+    {
+        return $this->hasMany(Article::class, 'category_id', 'id');
+    }
+
 }
