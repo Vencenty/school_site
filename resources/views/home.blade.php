@@ -70,7 +70,6 @@
         }
 
 
-
         .content {
             width: 100%;
             margin: 10px 0;
@@ -98,7 +97,7 @@
             text-align: center;
         }
 
-        .link>div {
+        .link > div {
             align-items: center;
             width: 50%;
         }
@@ -137,34 +136,45 @@
 @endsection
 
 @section('content')
-<div class="slogan">
-    <div>
-        <p><span>创建目标：</span>建一流高水平专业教师团队</p>
-        <p>&emsp;&emsp;&emsp;&emsp;&emsp;育一流高水平金融工匠人才</p>
+    <div class="slogan">
+        <div>
+            <p><span>创建目标：</span>建一流高水平专业教师团队</p>
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;育一流高水平金融工匠人才</p>
+        </div>
+        <div>
+            <p><span>创建口号：</span>展巾幅教师风采</p>
+            <p><span>&emsp;&emsp;&emsp;&emsp;&emsp;</span>创一流双高品牌</p>
+        </div>
+        <div>
+            <p><span> 创建标准：</span>爱国守法 修身立德</p>
+            <p><span>&emsp;&emsp;&emsp;&emsp;&emsp;</span> 敬业爱岗 潜心育人</p>
+        </div>
+        <div>
+            <p><span> 工作承诺：</span> 做学生欢迎之师</p>
+            <p><span>&emsp;&emsp;&emsp;&emsp;&emsp;</span> 育时代有用之才</p>
+        </div>
     </div>
-    <div>
-        <p><span>创建口号：</span>展巾幅教师风采</p>
-        <p><span>&emsp;&emsp;&emsp;&emsp;&emsp;</span>创一流双高品牌</p>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./rotationPic1.jpg"/></div>
+            <div class="swiper-slide"><img src="./rotationPic1.jpg"/></div>
+            <div class="swiper-slide"><img src="./rotationPic1.jpeg"/></div>
+            <div class="swiper-slide"><img src="./rotationPic1.jpeg"/></div>
+            <div class="swiper-slide"><img src="./rotationPic1.jpg"/></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
     </div>
-    <div>
-        <p><span> 创建标准：</span>爱国守法 修身立德</p>
-        <p><span>&emsp;&emsp;&emsp;&emsp;&emsp;</span> 敬业爱岗 潜心育人</p>
-    </div>
-    <div>
-        <p><span> 工作承诺：</span> 做学生欢迎之师</p>
-        <p><span>&emsp;&emsp;&emsp;&emsp;&emsp;</span> 育时代有用之才</p>
-    </div>
-</div>
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="./rotationPic1.jpg"/></div>
-        <div class="swiper-slide"><img src="./rotationPic1.jpg"/></div>
-        <div class="swiper-slide"><img src="./rotationPic1.jpeg"/></div>
-        <div class="swiper-slide"><img src="./rotationPic1.jpeg"/></div>
-        <div class="swiper-slide"><img src="./rotationPic1.jpg"/></div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-</div>
+@endsection
 
+
+@section('link')
+    <ul class="list">
+        <li>友情链接：</li>
+        <li><a href='http://www.women.org.cn' target="_self"><img src="/assets/img/country.jpg"/>中华全国妇女联合会</a></li>
+        <li><a href='http://www.zjswomen.org.cn' target="_self"><img src="/assets/img/province.jpg"/>浙江省妇女联合会</a></li>
+        <li><a href='https://www.hzwomen.org.cn' target="_self"><img src="/assets/img/city.jpg"/>杭州市妇女联合会</a></li>
+        <li><a href='http://www.zjedu.gov.cn' target="_self"><img src="/assets/img/teach.png" style="
+      border-radius: 0%;"/>浙江省教育厅</a></li>
+    </ul>
 @endsection
